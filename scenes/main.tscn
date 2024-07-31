@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://gnmg1wop71at"]
+[gd_scene load_steps=5 format=3 uid="uid://gnmg1wop71at"]
 
 [ext_resource type="PackedScene" uid="uid://b13fkiuaitett" path="res://scenes/background.tscn" id="1_5sq2m"]
 [ext_resource type="PackedScene" uid="uid://23qqrepmorv3" path="res://scenes/player.tscn" id="3_6ljex"]
+[ext_resource type="PackedScene" uid="uid://c488vsd10n4ex" path="res://scenes/tile_map.tscn" id="4_jmfkh"]
 [ext_resource type="Script" path="res://scripts/Generator.gd" id="4_jw8gy"]
 
 [node name="Main" type="Node2D"]
@@ -11,9 +12,9 @@ layer = -1
 
 [node name="Player" parent="." instance=ExtResource("3_6ljex")]
 z_index = 1
+position = Vector2(583, 327)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(1.5, 1.5)
 
 [node name="Generator" type="Node2D" parent="."]
 script = ExtResource("4_jw8gy")
@@ -21,3 +22,5 @@ script = ExtResource("4_jw8gy")
 [node name="Rooms" type="Node2D" parent="Generator"]
 
 [node name="Corridors" type="Node2D" parent="Generator"]
+
+[node name="TileMap" parent="Generator" instance=ExtResource("4_jmfkh")]
