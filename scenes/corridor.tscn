@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://chhk4vc8q7ixc"]
+
+[ext_resource type="PackedScene" uid="uid://c488vsd10n4ex" path="res://scenes/tile_map.tscn" id="1_v3n8k"]
+
+[node name="Corridor" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -128.0
+offset_top = -80.0
+offset_right = 128.0
+offset_bottom = 80.0
+color = Color(0.368627, 0.368627, 0.368627, 1)
+
+[node name="TileMap" parent="." instance=ExtResource("1_v3n8k")]
+layer_0/tile_data = PackedInt32Array(-262145, 0, 1, 327679, 0, 1, -327680, 0, 1, 262144, 0, 1, -327679, 0, 1, 262145, 0, 1, -327678, 0, 1, 262146, 0, 1, -327677, 0, 1, 262147, 0, 1, -327676, 0, 1, 262148, 0, 1, -327675, 0, 1, 262149, 0, 1, -327674, 0, 1, 262150, 0, 1, -327673, 0, 1, 262151, 0, 1, -262152, 0, 1, 327672, 0, 1, -262151, 0, 1, 327673, 0, 1, -262150, 0, 1, 327674, 0, 1, -262149, 0, 1, 327675, 0, 1, -262148, 0, 1, 327676, 0, 1, -262147, 0, 1, 327677, 0, 1, -262146, 0, 1, 327678, 0, 1)

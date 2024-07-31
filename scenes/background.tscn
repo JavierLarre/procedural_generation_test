@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://b13fkiuaitett"]
+
+[ext_resource type="Texture2D" uid="uid://b78j3ietnuky3" path="res://assets/background/maxresdefault-3728666779.jpg" id="1_lag6f"]
+
+[node name="Background" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_lag6f")
+expand_mode = 1
