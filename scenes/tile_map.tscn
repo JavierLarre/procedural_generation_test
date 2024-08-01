@@ -372,3 +372,6 @@ sources/0 = SubResource("TileSetAtlasSource_o722g")
 [node name="TileMap" type="TileMap"]
 tile_set = SubResource("TileSet_32ndo")
 format = 2
+layer_0/name = "floor"
+layer_1/name = "walls"
+layer_1/tile_data = PackedInt32Array()

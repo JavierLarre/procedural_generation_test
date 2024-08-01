@@ -13,6 +13,11 @@ config_version=5
 config/name="the game"
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
+config/windows_native_icon="res://icon.ico"
+
+[display]
+
+window/size/mode=2
 
 [input]
 

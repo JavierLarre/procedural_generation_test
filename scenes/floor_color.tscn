@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://nhyctj0fr31t"]
+
+[ext_resource type="Script" path="res://scripts/floor_color.gd" id="1_3r5nx"]
+
+[node name="FloorColor" type="ColorRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_3r5nx")
